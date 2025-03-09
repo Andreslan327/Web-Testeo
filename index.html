@@ -3,20 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
+    <title>Mantenimiento de Software - Contacto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 50px;
+            padding: 20px;
         }
         h1 {
             color: #3498db;
         }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .whatsapp {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
-    <h1>¡Hola, mundo!</h1>
-    <p>Mi primera página en GitHub Pages.</p>
+    <h1>Mantenimiento de Software para PC</h1>
+    <p>Optimización, formateo, instalación de programas y más.</p>
+    
+    <div class="container">
+        <h2>Contáctame</h2>
+        <form action="mailto:tucorreo@example.com" method="post" enctype="text/plain">
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+            <input type="email" name="correo" placeholder="Tu correo" required>
+            <textarea name="mensaje" placeholder="Escribe tu mensaje" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <a class="whatsapp" href="https://wa.me/57XXXXXXXXXX" target="_blank">Contactar por WhatsApp</a>
+    </div>
 </body>
 </html>
